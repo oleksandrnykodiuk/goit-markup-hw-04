@@ -134,6 +134,8 @@ img {
 }
 
 .contacts-list .link {
+  display: inline-flex;
+  align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
 
@@ -144,6 +146,16 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   font-style: normal;
+}
+
+.address-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.mail-icon:hover,
+.mail-icon:focus {
+  fill: var(--acccent-color);
 }
 
 .contacts-list .link:hover,
@@ -160,7 +172,10 @@ img {
   margin-bottom: 94px;
   background-color: #2f303a;
   height: 600px;
+  max-width: 1600px;
   text-align: center;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/hero.jpg);
 }
 
 .hero .box-container {
@@ -244,6 +259,26 @@ img {
   font-size: 14px;
   line-height: 1.71;
 }
+.advantages-icon {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.advantages-icon.icon {
+  fill: currentColor;
+}
+
+.advantages-icon.icon:hover,
+.advantages-icon.icon:focus {
+  color: var(--acccent-color);
+}
+
 /* .about-section */
 
 .about-section {
@@ -286,7 +321,7 @@ img {
 
 .team-list .photo,
 .team-list .text {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .team-list .title {
@@ -311,6 +346,25 @@ img {
 .team-list .text {
   color: var(--secondary-text-color);
   font-weight: 400;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links-item {
+  width: 20px;
+  height: 20px;
+}
+
+.social-links-link {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
 }
 
 /* footer */
