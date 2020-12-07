@@ -5,7 +5,9 @@
   --primary-background-color: #ffffff;
   --secondary-background-color: #f5f4fa;
   --icon-color: #afb1b8;
+  --secondary-icon-color: #ffffff;
   --primary-white-color: #ffffff;
+  --icon-background-color: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -54,7 +56,7 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* Logo */
@@ -347,13 +349,17 @@ img {
   font-weight: 400;
 }
 
-.social-links {
+.socials {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
 }
 
-.social-links-link {
+.socials-list {
+  display: flex;
+}
+
+.socials-link {
   display: flex;
   height: 44px;
   width: 44px;
@@ -363,18 +369,18 @@ img {
   color: var(--icon-color);
 }
 
-.social-links-link:nth-child(-n + 3) {
+.socials-item:nth-child(-n + 3) {
   margin-right: 10px;
 }
 
-.social-links-item {
+.socials-icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
 }
 
-.social-links-link:hover,
-.social-links-link:focus {
+.socials-link:hover,
+.socials-link:focus {
   color: #ffffff;
   background-color: var(--acccent-color);
 }
@@ -404,6 +410,16 @@ img {
   align-items: center;
 }
 
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--acccent-color);
+  border: 1px solid var(--acccent-color);
+}
+
+.clients-icon {
+  fill: currentColor;
+}
+
 /* end clients */
 
 /* footer */
@@ -411,19 +427,6 @@ img {
 .footer-container {
   display: flex;
   align-items: baseline;
-}
-
-.socials .social-links-link {
-  display: inline-flex;
-}
-
-.social-links-link .accent {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: var(--primary-white-color);
-}
-
-.socials.social-links-link:hover,
-.socials.social-links-link:focus {
 }
 
 .page-footer {
@@ -442,6 +445,11 @@ img {
   line-height: 1.142;
   text-transform: uppercase;
   color: var(--primary-white-color);
+}
+
+.footer-icon {
+  background-color: var(--icon-background-color);
+  color: var(--secondary-icon-color);
 }
 
 .page-footer .logo {
@@ -464,8 +472,6 @@ img {
 
 .contacts-list-footer .link {
   display: block;
-  /* padding-top: 3px;
-  padding-bottom: 3px; */
 
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;

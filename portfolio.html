@@ -31,19 +31,28 @@
               <a class="link current" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="item">
-              <a class="link" href="./contacts.html">Контакты</a>
+              <a class="link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
         <address class="contacts">
           <ul class="contacts-list list">
             <li class="item">
-              <a class="link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+              <a class="link" href="mailto:info@devstudio.com">
+                <svg class="address-icon" width="16" height="12">
+                  <use href="./images/sprite.svg#mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
+
             <li class="item">
-              <a class="link" href="tell:+380961111111">+38 096 111 11 11</a>
+              <a class="link" href="tell:+380961111111">
+                <svg class="address-icon" width="10" height="16">
+                  <use href="./images/sprite.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
         </address>
@@ -86,8 +95,7 @@
                 <h2 class="title">Технокряк</h2>
                 <p class="text">Веб-сайт</p>
                 <p class="description">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Magnam, assumenda!
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, assumenda!
                 </p>
               </a>
             </li>
@@ -104,8 +112,7 @@
                 <h2 class="title">Постер New Orlean vs Golden Star</h2>
                 <p class="text">Дизайн</p>
                 <p class="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
-                  nisi.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nisi.
                 </p>
               </a>
             </li>
@@ -122,8 +129,7 @@
                 <h2 class="title">Ресторан Seafood</h2>
                 <p class="text">Приложение</p>
                 <p class="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
-                  nisi.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nisi.
                 </p>
               </a>
             </li>
@@ -139,8 +145,7 @@
                 <h2 class="title">Проект Prime</h2>
                 <p class="text">Маркетинг</p>
                 <p class="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
-                  nisi.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nisi.
                 </p>
               </a>
             </li>
@@ -157,8 +162,7 @@
                 <h2 class="title">Проект Boxes</h2>
                 <p class="text">Приложения</p>
                 <p class="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
-                  nisi.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nisi.
                 </p>
               </a>
             </li>
@@ -175,8 +179,7 @@
                 <h2 class="title">Inspiration has no Borders</h2>
                 <p class="text">Веб-сайт</p>
                 <p class="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
-                  nisi.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nisi.
                 </p>
               </a>
             </li>
@@ -193,8 +196,7 @@
                 <h2 class="title">Издание Limited Edition</h2>
                 <p class="text">Дизайн</p>
                 <p class="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
-                  nisi.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nisi.
                 </p>
               </a>
             </li>
@@ -211,8 +213,7 @@
                 <h2 class="title">Проект LAB</h2>
                 <p class="text">Маркетинг</p>
                 <p class="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
-                  nisi.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nisi.
                 </p>
               </a>
             </li>
@@ -229,8 +230,7 @@
                 <h2 class="title">Growing Business</h2>
                 <p class="text">Приложение</p>
                 <p class="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
-                  nisi.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nisi.
                 </p>
               </a>
             </li>
@@ -241,30 +241,59 @@
     <!--footer-->
     <footer class="page-footer">
       <div class="container footer-container">
-        <a
-          class="logo logo-footer"
-          href="./index.html"
-          aria-label="логотип сайта"
-        >
-          <span class="accent">Web</span>Studio
-        </a>
-        <address>
-          <ul class="contacts-list-footer list">
-            <li class="item">
-              <a class="link mail" href="./index.html" target="blank"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
+        <div class="footer-box">
+          <a class="logo logo-footer" href="./index.html" aria-label="логотип сайта">
+            <span class="accent">Web</span>Studio
+          </a>
+          <address id="contacts">
+            <ul class="contacts-list-footer list">
+              <li class="item">
+                <a class="link mail" href="./index.html" target="blank"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="item">
+                <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="item">
+                <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-box">
+          <p class="text">Присоединяйтесь</p>
+          <ul class="socials-list list">
+            <li class="socials-item">
+              <a class="socials-link footer-icon" href="">
+                <svg class="socials-icon" width="20" height="20">
+                  <use href="../images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="item">
-              <a class="link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+            <li class="socials-item">
+              <a class="socials-link footer-icon" href="">
+                <svg class="socials-icon" width="20" height="20">
+                  <use href="../images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="item">
-              <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <li class="socials-item">
+              <a class="socials-link footer-icon" href="">
+                <svg class="socials-icon" width="20" height="20">
+                  <use href="../images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a class="socials-link footer-icon" href="">
+                <svg class="socials-icon" width="20" height="20">
+                  <use href="../images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
