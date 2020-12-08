@@ -176,7 +176,6 @@ img {
 
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px;
   background-color: #2f303a;
   max-width: 1600px;
   text-align: center;
@@ -237,7 +236,8 @@ img {
 }
 
 .advantages-section {
-  margin-bottom: 69px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .advantages-section .container {
@@ -284,7 +284,7 @@ img {
 /* .about-section */
 
 .about-section {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .about-section .section-title,
@@ -308,10 +308,9 @@ img {
 .team-section {
   display: flex;
   justify-content: center;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   align-items: center;
-  min-height: 698px;
-
   background-color: var(--secondary-background-color);
 }
 
@@ -397,7 +396,8 @@ img {
 
 .clients-section {
   display: flex;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .clients-list {
